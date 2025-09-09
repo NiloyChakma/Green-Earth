@@ -24,12 +24,14 @@
   </head>
   <body class="flex flex-col justify-center items-center bg-[#F0FDF4]">
     <header>
-      <div class="navbar bg-green-600 shadow-sm w-[1024px]">
+      <div class="heading navbar bg-green-600 shadow-sm w-[1024px]">
         <div class="navbar-start">
-          <h1 class="noto-serif-normal text-white text-xl">Green Earth</h1>
+          <h1 class="heading-1 noto-serif-normal text-white text-xl">
+            Green Earth
+          </h1>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 text-white">
+        <div class="navbar-center">
+          <ul class="heading-2 menu menu-horizontal px-1 text-white">
             <li><a>About</a></li>
             <li><a>Gallery</a></li>
             <li><a>Plant a Tree</a></li>
@@ -37,7 +39,7 @@
         </div>
         <div class="navbar-end">
           <button
-            class="btn btn-warning rounded-4xl text-green-800 w-[110px] h-[35px]"
+            class="heading-3 btn btn-warning rounded-4xl text-green-800 w-[110px] h-[35px]"
           >
             Plant a Tree
           </button>
@@ -46,7 +48,7 @@
     </header>
     <main class="flex flex-col justify-center items-center">
       <section
-        class="flex flex-row justify-center items-center w-[1024px] h-[250px] bg-[#CFF0DC]"
+        class="future flex flex-row justify-center items-center w-[1024px] h-[250px] bg-[#CFF0DC]"
       >
         <div>
           <img
@@ -54,18 +56,19 @@
             alt="Left-leaf"
             width="250"
             height="300"
+            class="future-1"
           />
         </div>
         <div class="flex flex-col justify-center items-center text-center">
-          <h1 class="text-3xl font-semibold noto-serif-normal">
+          <h1 class="future-2 text-3xl font-semibold noto-serif-normal">
             Plant a Tree, Grow a Future
           </h1>
-          <p class="mb-2 inter-normal">
+          <p class="future-3 mb-2 inter-normal">
             Join our mission to plant 1 million trees and make the Earth greener
             for future generations.
           </p>
           <button
-            class="btn btn-warning rounded-4xl text-green-800 inter-normal w-[140px] h-[43px]"
+            class="future-4 btn btn-warning rounded-4xl text-green-800 inter-normal w-[140px] h-[43px]"
           >
             Get Involved
           </button>
@@ -76,23 +79,24 @@
             alt="Left-leaf"
             width="250"
             height="300"
+            class="future-1"
           />
         </div>
       </section>
       <section
-        class="flex flex-col justify-center items-center w-[1024px] h-[5300px]"
+        class="choosing flex flex-col justify-center items-center w-[1024px] h-[5300px]"
       >
         <h1 class="mb-2 text-3xl font-semibold noto-serif-normal">
           Choose Your Trees
         </h1>
-        <div class="grid grid-cols-[130px_675px_200px] gap-2">
+        <div class="choosing-1 grid grid-cols-[140px_675px_200px] gap-1">
           <div class="flex flex-col pl-2">
             <h1>Categories</h1>
-            <ul id="all-categories"></ul>
+            <ul id="all-categories" class="choosing-2"></ul>
           </div>
           <div
             id="all-plants"
-            class="grid grid-cols-3 gap-1 h-[5200px] p-2"
+            class="choosing-3 grid grid-cols-3 gap-1 h-[5200px] p-2"
           ></div>
           <div class="flex flex-col h-[100px] bg-white">
             <h1>Your Cart</h1>
@@ -100,22 +104,23 @@
         </div>
       </section>
       <section
-        class="flex flex-col justify-center items-center w-[800px] h-[500px]"
+        class="campaign flex flex-col justify-center items-center w-[800px] h-[500px]"
       >
         <h1 class="mb-8 text-3xl font-semibold noto-serif-normal">
           About the Campaign
         </h1>
-        <div class="grid grid-cols-2 gap-4">
+        <div class="campaign-1 grid grid-cols-2 gap-4">
           <div>
             <img
               src="./assets/about.png"
               alt="About"
               width="350"
               height="350"
+              class="small-plant"
             />
           </div>
           <div
-            class="flex flex-col justify-center inter-normal w-[350px] h-[350px]"
+            class="campaign-2 flex flex-col justify-center inter-normal w-[350px] h-[350px]"
           >
             <p>
               Green Earth is a global tree plantation initiative dedicated to
@@ -132,12 +137,12 @@
         </div>
       </section>
       <section
-        class="flex flex-col justify-center items-center w-[1024px] h-[300px] bg-[#CFF0DC]"
+        class="impact flex flex-col justify-center items-center w-[1024px] h-[300px] bg-[#CFF0DC]"
       >
         <h1 class="mb-6 text-3xl font-semibold noto-serif-normal">
           Our Impact
         </h1>
-        <div class="grid grid-cols-3 gap-4 inter-normal">
+        <div class="impact-1 grid grid-cols-3 gap-4 inter-normal">
           <div
             class="flex flex-col justify-center items-center rounded-xl w-[270px] h-[100px] bg-white"
           >
@@ -159,28 +164,28 @@
         </div>
       </section>
       <section
-        class="flex flex-col justify-center items-center w-[1024px] h-[450px] bg-[#166534]"
+        class="plant-tree flex flex-col justify-center items-center w-[1024px] h-[450px] bg-[#166534]"
       >
         <h1 class="mb-6 text-white text-2xl font-semibold noto-serif-normal">
           Plant a Tree Today
         </h1>
         <div
-          class="flex flex-col justify-center items-center rounded-xl inter-normal w-[550px] h-[311px] bg-[#15803D]"
+          class="plant-tree-1 flex flex-col justify-center items-center rounded-xl inter-normal w-[550px] h-[311px] bg-[#15803D]"
         >
           <input
-            class="border-none rounded-xl mb-4 pl-2 w-[470px] h-[48px] bg-white"
+            class="plant-tree-2 border-none rounded-xl mb-4 pl-2 w-[470px] h-[48px] bg-white"
             type="text"
             placeholder="Your Name"
             class="input"
           />
           <input
-            class="border-none rounded-xl mb-4 pl-2 w-[470px] h-[48px] bg-white"
+            class="plant-tree-2 border-none rounded-xl mb-4 pl-2 w-[470px] h-[48px] bg-white"
             type="text"
             placeholder="Your Email Address"
             class="input"
           />
           <select
-            class="border-none rounded-xl mb-4 pl-2 w-[470px] h-[48px] bg-white"
+            class="plant-tree-2 border-none rounded-xl mb-4 pl-2 w-[470px] h-[48px] bg-white"
             class="select select-ghost"
           >
             <option disabled selected>Number of Trees</option>
@@ -195,7 +200,7 @@
             <option>50</option>
           </select>
           <button
-            class="btn btn-warning rounded-4xl text-green-800 w-[470px] h-[43px]"
+            class="plant-tree-2 btn btn-warning rounded-4xl text-green-800 w-[470px] h-[43px]"
           >
             Donate Now
           </button>
@@ -204,7 +209,7 @@
     </main>
     <footer>
       <p
-        class="flex flex-col justify-center items-center text-white inter-normal w-[1024px] h-[72px] bg-[#14532D]"
+        class="footer-part flex flex-col justify-center items-center text-white inter-normal w-[1024px] h-[72px] bg-[#14532D]"
       >
         © 2025 Green Earth. All Rights Reserved.
       </p>

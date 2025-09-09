@@ -26,39 +26,7 @@
     <header>
       <div class="navbar bg-green-600 shadow-sm w-[1024px]">
         <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-            >
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </li>
-              <li><a>Item 3</a></li>
-            </ul>
-          </div>
-          <a class="btn btn-ghost text-xl">daisyUI</a>
+          <h1 class="noto-serif-normal text-white text-xl">Green Earth</h1>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-white">
@@ -112,30 +80,21 @@
         </div>
       </section>
       <section
-        class="flex flex-col justify-center items-center border-4 border-color-red"
+        class="flex flex-col justify-center items-center w-[1024px] h-[5300px]"
       >
-        <h1 class="mb-6">Choose Your Trees</h1>
-        <div class="grid grid-cols-3 gap-4 w-[1024px] h-[800px]">
-          <div class="flex flex-col pl-2 w-[270px] h-[700px]">
+        <h1 class="mb-2 text-3xl font-semibold noto-serif-normal">
+          Choose Your Trees
+        </h1>
+        <div class="grid grid-cols-[130px_675px_200px] gap-2">
+          <div class="flex flex-col pl-2">
             <h1>Categories</h1>
-            <ul>
-              <li>All Trees</li>
-              <li>Fruit Trees</li>
-              <li>Flowering Trees</li>
-              <li>Shade Trees</li>
-              <li>Medicinal Trees</li>
-              <li>Timber Trees</li>
-              <li>Evergreen Trees</li>
-              <li>Ornamental Plants</li>
-              <li>Bamboo</li>
-              <li>Climbers</li>
-              <li>Aquatic Plants</li>
-            </ul>
+            <ul id="all-categories"></ul>
           </div>
-          <div class="grid grid-cols-3 gap-4 w-[800px] h-[700px]">
-            <h1>120+</h1>
-          </div>
-          <div class="flex flex-col w-[270px] h-[100px] bg-white">
+          <div
+            id="all-plants"
+            class="grid grid-cols-3 gap-1 h-[5200px] p-2"
+          ></div>
+          <div class="flex flex-col h-[100px] bg-white">
             <h1>Your Cart</h1>
           </div>
         </div>
@@ -250,5 +209,6 @@
         © 2025 Green Earth. All Rights Reserved.
       </p>
     </footer>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

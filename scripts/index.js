@@ -1,15 +1,15 @@
 const allCategories = () => {
   fetch("https://openapi.programming-hero.com/api/categories")
     .then((response) => response.json())
-    .then((json) => diplayAllCategories(json.categories));
+    .then((json) => displayAllCategories(json.categories));
 };
-const diplayAllCategories = (categories) => {
+const displayAllCategories = (categories) => {
   const allCategories = document.getElementById("all-categories");
   allCategories.innerHTML = "";
   for (let category of categories) {
     const categoryName = document.createElement("li");
     categoryName.innerHTML = `
-        <li>${category.category_name}</li>
+        <li><button>${category.category_name}</button></li>
     `;
     allCategories.append(categoryName);
   }
@@ -19,9 +19,9 @@ allCategories();
 const allPlants = () => {
   fetch("https://openapi.programming-hero.com/api/plants")
     .then((response) => response.json())
-    .then((json) => diplayAllPlants(json.plants));
+    .then((json) => displayAllPlants(json.plants));
 };
-const diplayAllPlants = (plants) => {
+const displayAllPlants = (plants) => {
   const allPlants = document.getElementById("all-plants");
   allPlants.innerHTML = "";
   for (let plant of plants) {

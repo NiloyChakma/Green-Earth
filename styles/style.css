@@ -71,6 +71,10 @@
     grid-template-columns: repeat(2, 1fr);
     height: auto;
   }
+  .choosing-4 {
+    width: 420px;
+    height: auto;
+  }
   .campaign {
     width: 425px;
     height: 600px;

@@ -9,6 +9,12 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+.category-button.active {
+  width: 100px;
+  background-color: greenyellow;
+  border-radius: 5px;
+  font-weight: bold;
+}
 @media screen and (max-width: 425px) {
   .heading {
     width: 425px;
@@ -46,7 +52,7 @@
   }
   .choosing {
     width: 425px;
-    height: 8000px;
+    height: auto;
   }
   .choosing-1 {
     width: 420px;
@@ -56,13 +62,14 @@
     align-items: center;
   }
   .choosing-2 {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
   }
   .choosing-3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 7500px;
+    height: auto;
   }
   .campaign {
     width: 425px;
